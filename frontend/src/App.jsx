@@ -19,7 +19,7 @@ export default function App() {
       else formData.append("text", text);
       formData.append("mode", mode);
 
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/review`, formData, {
+      const res = await axios.post(`https://roastume-backend.onrender.com/api/review`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setResult(res.data);
