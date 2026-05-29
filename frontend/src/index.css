@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #222222;
+  --accent: #ff4d00;
+  --accent-soft: #ff4d0015;
+  --green: #00e676;
+  --red: #ff1744;
+  --amber: #ffab00;
+  --text: #f0f0f0;
+  --muted: #666666;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+.mono { font-family: 'DM Mono', monospace; }
